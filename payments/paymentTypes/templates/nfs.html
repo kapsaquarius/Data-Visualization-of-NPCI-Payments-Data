@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NFS Payments</title>
+
+    <style type="text/css">
+    	
+		hr.rounded {
+		  border-top: 8px solid #bbb;
+		  border-radius: 5px;
+		}
+
+
+    </style>
+    
+
+	<script type="text/javascript" src="{% static 'paymentTypes/js/fusioncharts.js' %}"></script>
+	<script type="text/javascript" src="{% static 'paymentTypes/js/fusioncharts.charts.js' %}"></script>
+	<script type="text/javascript" src="{% static 'paymentTypes/js/themes/fusioncharts.theme.fusion.js' %}"></script>
+</head>
+
+<body>
+    <div id="myFirstchart-container-1NFSc">{{ output1|safe }}</div>
+
+    <div id="myFirstchart-container-1NFSa">{{ output2|safe }}</div>
+
+    <hr class="rounded">
+
+    <div id="myFirstchart-container-2NFSc">{{ output3|safe }}</div>
+
+    <div id="myFirstchart-container-2NFSa">{{ output4|safe }}</div>
+
+    <hr class="rounded">
+
+    <div id="myFirstchart-container-3NFSc">{{ output5|safe }}</div>
+
+    <div id="myFirstchart-container-3NFSa">{{ output6|safe }}</div>
+
+    <hr class="rounded">
+
+    <div id="myFirstchart-container-4NFSc">{{ output7|safe }}</div>
+
+    <div id="myFirstchart-container-4NFSa">{{ output8|safe }}</div>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visualize Payments</title>
+	<script type="text/javascript" src="{% static 'paymentTypes/js/fusioncharts.js' %}"></script>
+	<script type="text/javascript" src="{% static 'paymentTypes/js/fusioncharts.charts.js' %}"></script>
+	<script type="text/javascript" src="{% static 'paymentTypes/js/themes/fusioncharts.theme.fusion.js' %}"></script>
+
+	<style type="text/css">
+		.center {
+		  text-align: center;
+		  border: 5px solid green;
+		}
+
+	</style>
+</head>
+<body class="center" >
+			<form method="post" >
+	               {% csrf_token %}
+	                
+	               <h2><b>{{ form.as_p }}</b></h2>
+	           	   </br>
+	           	   </br>
+	           	   
+            	<div style="text-align: center "><input type="submit" value="Visualize"></div>
+            	</br>
+
+        	</form>
+
+            {% if yeartag == "1" and payment == "upi" %}
+
+	            <div id="myFirstchart-container-1UPIc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-1UPIa">{{ output2|safe }}</div>
+
+		    {% endif %}
+
+		    {% if yeartag == "2" and payment == "upi" %}
+
+	            <div id="myFirstchart-container-2UPIc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-2UPIa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+
+		    {% if yeartag == "3" and payment == "upi" %}
+
+	            <div id="myFirstchart-container-3UPIc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-3UPIa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "4" and payment == "upi" %}
+
+	            <div id="myFirstchart-container-4UPIc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-4UPIa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "1" and payment == "nfs" %}
+
+	            <div id="myFirstchart-container-1NFSc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-1NFSa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "2" and payment == "nfs" %}
+
+	            <div id="myFirstchart-container-2NFSc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-2NFSa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "3" and payment == "nfs" %}
+
+	            <div id="myFirstchart-container-3NFSc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-3NFSa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "4" and payment == "nfs" %}
+
+	            <div id="myFirstchart-container-4NFSc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-4NFSa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+
+
+		    {% if yeartag == "1" and payment == "pos" %}
+
+	            <div id="myFirstchart-container-1POSc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-1POSa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "2" and payment == "pos" %}
+
+	            <div id="myFirstchart-container-2POSc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-2POSa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "3" and payment == "pos" %}
+
+	            <div id="myFirstchart-container-3POSc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-3POSa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "4" and payment == "pos" %}
+
+	            <div id="myFirstchart-container-4POSc">{{ output1|safe }}</div>
+
+			    <div id="myFirstchart-container-4POSa">{{ output2|safe }}</div>
+
+		    {% endif %} 
+
+
+		    {% if yeartag == "1" and payment == "netcval" %}
+
+		    	<div id="myFirstchart-container-1Val">{{ output3|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "2" and payment == "netcval" %}
+
+		    	<div id="myFirstchart-container-2Val">{{ output3|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "3" and payment == "netcval" %}
+
+		    	<div id="myFirstchart-container-3Val">{{ output3|safe }}</div>
+
+		    {% endif %} 
+
+
+		    {% if yeartag == "4" and payment == "netcval" %}
+
+		    	<div id="myFirstchart-container-4Val">{{ output3|safe }}</div>
+
+		    {% endif %} 
+
+
+		    {% if yeartag == "1" and payment == "netcvol" %}
+
+		    	<div id="myFirstchart-container-1Vol">{{ output4|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "2" and payment == "netcvol" %}
+
+		    	<div id="myFirstchart-container-2Vol">{{ output4|safe }}</div>
+
+		    {% endif %} 
+
+		    {% if yeartag == "3" and payment == "netcvol" %}
+
+		    	<div id="myFirstchart-container-3Vol">{{ output4|safe }}</div>
+
+		    {% endif %} 
+
+
+		    {% if yeartag == "4" and payment == "netcvol" %}
+
+		    	<div id="myFirstchart-container-4Vol">{{ output4|safe }}</div>
+
+		    {% endif %} 
+
+
+
+
+</body>
+</html>

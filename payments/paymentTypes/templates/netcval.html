@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NETC Val Payments</title>
+
+    <style type="text/css">
+    	
+		hr.rounded {
+		  border-top: 8px solid #bbb;
+		  border-radius: 5px;
+		}
+
+
+    </style>
+    
+
+	<script type="text/javascript" src="{% static 'paymentTypes/js/fusioncharts.js' %}"></script>
+	<script type="text/javascript" src="{% static 'paymentTypes/js/fusioncharts.charts.js' %}"></script>
+	<script type="text/javascript" src="{% static 'paymentTypes/js/themes/fusioncharts.theme.fusion.js' %}"></script>
+</head>
+
+<body>
+    <div id="myFirstchart-container-1Val">{{ output1|safe }}</div>
+
+    <hr class="rounded">
+
+    <div id="myFirstchart-container-2Val">{{ output2|safe }}</div>
+
+    <hr class="rounded">
+
+    <div id="myFirstchart-container-3Val">{{ output3|safe }}</div>
+
+    <hr class="rounded">
+
+    <div id="myFirstchart-container-4Val">{{ output4|safe }}</div>
+</body>
+
+</html>
